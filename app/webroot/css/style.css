@@ -1,0 +1,76 @@
+body {
+  background-color: rgb(235, 233, 233);
+}
+
+/* --- partie AGENCE --- */
+
+/*zone de l'id="boutonAgence"*/
+#boutonAgence {
+  text-align: left;
+  position: relative;
+  left: 10px;
+}
+
+/*zone de la class="imageAgence"*/
+.imageAgence {
+  float: right;
+}
+
+/*zone de l'id="textAgence"*/
+#textAgence {
+  justify-content: center;
+  align-items: center;
+  /*height: 100vh;*/
+}
+
+/* --- partie AGCCUEIL --- */
+
+/*zone de l'id="banderole"*/
+#banderolle {
+  width: 600px;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  left: 200px;
+  /*border: 2px solid black;*/
+}
+
+.images {
+  display: flex;
+  animation-duration: 20s;
+  animation-name: imagesBande;
+  animation-iteration-count: infinite;
+}
+
+.error {
+  color: red;
+}
+
+@keyframes imagesBande {
+  0% {
+    transform: translateX(0); /*image 1*/
+  }
+  25% {
+    transform: translateX(-600px); /*image 2*/
+  }
+  50% {
+    transform: translateX(-1200px); /*image 3*/
+  }
+  75% {
+    transform: translateX(-1800px); /*image 4*/
+  }
+  100% {
+    transform: translateX(0); /*image 1*/
+  }
+}
+
+/*partie id="boutonAccueil"*/
+#boutonAcceuil {
+  text-align: center;
+}
+
+/*partie id="aide"*/
+#aide {
+  position: bottom;
+  text-align: center;
+}
